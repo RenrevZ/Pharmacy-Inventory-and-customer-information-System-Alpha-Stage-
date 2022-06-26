@@ -29,3 +29,7 @@ of our system
   - Customer List
     - List of all customer within the day and their purchase
     <img src="screenshot/Customerlist.png" alt="Pharmacy management system github">
+    
+    -The system is not responsive and can only be use on pc hardware
+      -Demo:http://pharmacyinventoryandinformationsystem.rf.gd/?i=1
+      
