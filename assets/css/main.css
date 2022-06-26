@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*============index code====================*/
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  list-style:none;
+  text-decoration:none;
+}
+
+.error-manager{
+  /* error for choosing item on manager.php */
+  display: none;
+
+}
+
+.report{
+  font-size: 50px;
+}
+.contain_button{
+  margin-left: 100px;
+}
+.contain{
+  margin-top:50px;
+}
+
+.title > h1{
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+ 
+}
+
+.card{
+    width: 500px;
+    transition: 0.3s;
+    
+}
+.card:hover{
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.flex{
+    display: flex;
+  flex-direction: row;
+  margin-left: 18%;
+  margin-top:15px;
+}
+
+.logo{
+  width:40%;
+  margin-left:30%;
+}
+.card-title{
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+}
+
+
+/*=============== End of Index Code============*/
+
+
+/*=================Button Code===========*/
+
+
+  .add_button{
+    width: 35%;
+    height: 20%;
+    cursor: pointer;
+    box-shadow: 1px 3px 4px rgb(0,0,0,0.3);
+  }
+
+  .submit_button{
+    cursor: pointer;
+    box-shadow: 1px 3px 4px rgb(0,0,0,0.3);
+    width: 60%;
+    margin-left:20%;
+    margin-top:20%;
+  }
+
+  .form_style{
+    margin-top:150px;
+  }
+
+
+/*Modal Code*/
+.modal-header > .Title_Manager{
+    margin:auto;
+    font-size: 45px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.2);
+}
+
+ /* ========= manager Code============*/
+ 
+ .sideNav{
+   position: fixed;
+   left:0;
+   width: 250px;
+   height: 100%;
+   background: #042331;
+ }
+ .sideNav > header > .logo{
+   font-size:120px;
+   margin:0;
+   padding:0;
+   line-height: 10px;
+   color:dimgray;
+ 
+ }
+ .sideNav > header{
+   font-size:22px;
+   color:white;
+   text-align:center;
+   line-height: 70px;
+   background: #063146;
+   user-select: none;
+ }
+
+ .sideNav > ul{
+   margin-top:30%;
+ }
+ .sideNav > ul > li > a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color:white;
+    padding-left:40px;
+    box-sizing:border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+ }
+
+ .sideNav > ul  > li > a:hover{
+  padding-left: 50px;
+  text-decoration: none;
+ }
+
+ .sideNav > ul > li > a > i{
+   margin-right:16px;
+
+ }
+
+ .sideNav > ul >li:nth-child(7){
+   margin-top:120px;
+ }
+
+ /*modal notification for confirmation*/
+ .modal-2{
+  background-color:#042331;
+  width:30%;
+  height: 30vh;
+  color:white;
+  position: absolute;
+  top:250px;
+  left: 35%;
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4),
+  3px 3px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: none;
+ }
+/*medicine list modal class as C_LIST*/
+ .C_LIST{
+  background-color:#042331;
+  width:30%;
+  height: 30vh;
+  color:white;
+  position: absolute;
+  top:300px;
+  left: 35%;
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4),
+  3px 3px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: none;
+ }
+ /*Option list modal class name O_list*/
+ .O_list{
+  background-color:#042331;
+  width:30%;
+  height: 30vh;
+  color:white;
+  position: relative;
+  top:-300px;
+  left: 35%;
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4),
+  3px 3px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: none;
+ }
+
+ /*Medicine list modal Class as M_List*/
+ .M_List{
+  background-color:#042331;
+  width:30%;
+  height: 30vh;
+  color:white;
+  position: relative;
+  top:-300px;
+  left: 35%;
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4),
+  3px 3px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: none;
+ }
+ /*dashboard modal Class as Dash_M*/
+ .Dash_M{
+  background-color:#042331;
+  width:40%;
+  height: 30vh;
+  color:white;
+  position: absolute;
+  top:30%;
+  left: 300px;
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4),
+  3px 3px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display: none;
+ }
+
+ /*delete modal for medicine list*/
+ .Delete_modal{
+   background-color:#042331;
+  width:30%;
+  height: 30vh;
+  color:white;
+  position: relative;
+  top:-150px;
+  left: 35%;
+  animation-name: animatetop;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4),
+  3px 3px 3px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  display:none;
+ }
+
+ .modal-Notification-body{
+  position: absolute;
+  top:22%;
+  left: 20%;
+  font-family: Tahoma,Verdana;
+ }
+ .modal-Notification-body > h3{
+  font-size: 40px;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  margin-left:35px;
+  line-height: 60px;
+ }
+
+ .modal-Notification-body > p{
+    margin-left:10px;
+    font-size: 20px;
+ }
+
+ .modal-Notification-body > input[type="button"]{
+  padding:8px;
+    border:none;
+    margin-right:5px;
+    width: 80px;
+ }
+
+ .modal-Notification-body > input[type="button"]:hover{
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3),
+    2px 2px 2px rgba(0,0,0,0.2),1px 1px 1px rgba(0,0,0,0.2);
+    color:#5cb85c;
+    cursor: pointer;
+ }
+
+ .modal-Notification-body > button > a{
+   text-decoration:none;
+   color:white;
+   width: 80px;
+   padding:10px;
+ }
+
+ .modal-Notification-body > button:hover{
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  color:#5cb85c;
+  cursor: pointer;
+ }
+ @keyframes animatetop {
+  from{
+   opacity:0;
+   width: 33%;
+   height: 33vh;
+  }
+
+  to{
+       opacity:1;
+  }
+ }
+/* ======== main item =========== */
+.main > .table_information{
+  position:relative;
+   left:300px;
+   top:100px;
+   right:300px;
+   width:77%;
+   border:1px solid rgba(0,0,0,0.2);
+   padding:10px;
+   box-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+}
+
+.main > .form_button{
+  position:relative;
+   left:300px;
+   top:100px;
+   right:300px;
+}
+ .main > form{
+   position:relative;
+   left:300px;
+   top:100px;
+   right:300px;
+   width:70%;
+   border:1px solid rgba(0,0,0,0.2);
+   padding:10px;
+   box-shadow: 3px 3px 2px rgba(0,0,0,0.2);
+ }
+ .button_block{
+   margin-top:10px;
+ }
+
+ .table_information > .Med_table{
+   font-size:25px;
+ }
+
+ .main > header{
+  position:relative;
+  left:44%;
+  top:50px;
+ }
+
+ #cloneform select{
+   border:#042331;
+ }
+

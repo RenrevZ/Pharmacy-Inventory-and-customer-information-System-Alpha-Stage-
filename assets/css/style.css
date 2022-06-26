@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('./main.css');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.CCMain{
+    width:70%;
+    height: 650px;
+    border: 1px solid rgba(0,0,0,0.3);
+    position:relative;
+    top:80px;
+    left:250px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3); 
+  }
+ form > img{
+    width:35%;
+    position: relative;
+    left:50px;
+    top:-354px;
+}
+
+.CCMain .form-group{
+    position:relative;
+    left:450px;
+    top:35px;
+
+}
+
+label{
+    margin-top:10px;
+}
+
+input[type="submit"]{
+    position: relative;
+    top:-130px;
+    left:200px;
+}
+
+.CCMain > h1{
+    position: relative;
+    left:370px;
+    top:20px;
+    font-size:50px;
+}
+
+small{
+    position: relative;
+    top:-115px;
+    left:150px;
+    font-size:16px;
+}
+
+/* Dashboard Code Column */
+.wrapper-b{
+    width: 80%;
+    height: 100vh;
+    position: relative;
+    left: 20%;
+    top: 100px;
+}
+.wrapper-b .containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.wrapper-b .Medicine-column .card,
+.wrapper-b .RO-med-column .card,
+.wrapper-b .user-column .card
+{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wrapper-b .Medicine-column .card{
+    background-color:#151e3d;
+}
+
+
+.wrapper-b .RO-med-column .card{
+    background-color:#710c04;
+}
+.wrapper-b .RO-med-column .card h1{
+    margin-top: 15px;
+}
+.wrapper-b .user-column .card{
+    background-color:#354a21;
+}
+
+.wrapper-b .user-column .card h1{
+    margin-top: 15px;
+}
+
+.wrapper-b .Medicine-column .card .medicine-count{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wrapper-b .RO-med-column .medicine-count i,
+.wrapper-b .user-column .card .medicine-count i
+{
+   
+    font-size:60px;
+    padding-right:10px;
+    margin-right:50px;
+}
+
+.wrapper-b .Medicine-column .card .medicine-count i{
+    font-size:60px;
+    padding-right:10px;
+    margin-right:50px;
+}
+
+/* Table style */
+.table-column{
+    position: absolute;
+    top:0px;
+    left: 400px;
+    width: 62%;
+}
+
+.table-manager{
+    width: 30%;
+}
